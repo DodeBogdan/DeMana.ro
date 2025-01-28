@@ -1,0 +1,40 @@
+<div class="flex-container">
+  <div id="name"><p>DeMana.ro</p></div>
+  <div id="moto"><p>Creat cu suflet, ales cu drag!</p></div>
+  <div id="profile"><span class="dot"></span></div>
+</div>
+<div class="main-bar">
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" id="menuCheckbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <li>
+          <a href="/home">
+            <label>Home</label>
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <label for="menuCheckbox" onclick="this.parentNode.click();"
+              >About</label
+            >
+          </a>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a>Info</a></label>
+        </li>
+        <li>
+          <label for="menuCheckbox"><a>Contact</a></label>
+        </li>
+        <li>
+          <a href="https://erikterwan.com/" target="_blank">Show me more</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>
